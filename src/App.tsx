@@ -1,9 +1,9 @@
 import './App.css'
-import About from './components/sections/About'
-import Connect from './components/sections/Connect'
+// import About from './components/sections/About'
+// import Connect from './components/sections/Connect'
 import Hero from './components/sections/Hero'
-import Project from './components/sections/Project'
-import Stack from './components/sections/Stack'
+// import Project from './components/sections/Project'
+// import Stack from './components/sections/Stack'
 
 function App() {
 
