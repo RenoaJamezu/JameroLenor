@@ -3,40 +3,43 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="flex flex-row items-center gap-12 py-12">
+    <section className="w-full max-w-6xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
       {/* Left */}
-      <div className="w-2/3 flex flex-col justify-center text-left px-5">
-        <h1 className="text-3xl md:text-4xl font-bold text-neutral-100">Hi, I'm <a className="underline decoration-neutral-100">Lenor James Jamero</a></h1>
-        <p className="mt-4 text-xl text-neutral-300 max-w-2xl text-justify">
-          a <a className="underline decoration-neutral-300">Full Stack Developer</a> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design.
+      <div className="w-full md:w-2/3 flex flex-col justify-center text-center md:text-left px-2 md:px-5">
+        <h1 className="text-2xl text-justify sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-100">
+          Hi, I'm <span className="underline decoration-neutral-100">Lenor James Jamero</span>
+        </h1>
+
+        <p className="mt-4 text-base text-justify sm:text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto md:mx-0">
+          a <span className="underline decoration-neutral-300">Full Stack Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design.
         </p>
-        <div className="flex mt-2 gap-3 items-center">
-          <p className="text-lg text-neutral-200">
-            Available for work
-          </p>
-          <div className="relative h-3 w-3">
-            <div className="absolute h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></div>
-            <div className="h-3 w-3 bg-green-500 rounded-full"></div>
+
+        <div className="flex mt-4 gap-3 items-center text-justify md:justify-start">
+          <p className="text-base sm:text-lg text-neutral-200">Available for work</p>
+
+          <div className="relative flex items-center">
+            <span className="absolute inline-flex rounded-full bg-green-500 opacity-75 animate-ping h-3 w-3 sm:h-4 sm:w-4"></span>
+            <span className="relative inline-flex rounded-full bg-green-500 h-3 w-3 sm:h-4 sm:w-4"></span>
           </div>
         </div>
-        <div className="flex mt-2 gap-4 px-1">
-          <button className="text-lg text-neutral-950 bg-neutral-100 px-3 py-2 rounded-lg hover:bg-neutral-300">
+
+        <div className="flex sm:flex-row mt-4 gap-3 px-1 items-center md:items-start">
+          <button className="w-auto text-lg text-neutral-950 bg-neutral-100 px-4 py-2 rounded-lg hover:bg-neutral-300 transition">
             My Resume
           </button>
-          <button>
-            <a href="https://github.com/RenoaJamezu">
-              <FaGithub className="text-neutral-100 text-4xl hover:text-neutral-300" />
-            </a>
-          </button>
+
+          <a href="https://github.com/RenoaJamezu" className="text-neutral-100 hover:text-neutral-300">
+            <FaGithub className="text-3xl sm:text-4xl" />
+          </a>
         </div>
       </div>
 
       {/* Right */}
-      <div className="w-1/3 flex justify-end items-center px-5">
+      <div className="w-auto md:w-1/3 flex justify-center md:justify-end items-center px-5 mb-6 md:mb-0">
         <img
           src={HeroNor}
           alt="Portrait"
-          className="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-neutral-500"
+          className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-neutral-500 transition-transform transform"
         />
       </div>
     </section>

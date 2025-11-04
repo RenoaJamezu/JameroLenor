@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <main className="min-h-screen w-full flex justify-center bg-black">
+      <main className="min-h-screen w-full flex justify-center items-center bg-black">
         <Hero />
         {/*<About />
         <Stack />
