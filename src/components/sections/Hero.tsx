@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="flex flex-row items-center gap-12 py-12">
       {/* Left */}
-      <div className="w-2/3 flex flex-col justify-center text-left">
+      <div className="w-2/3 flex flex-col justify-center text-left px-5">
         <h1 className="text-3xl md:text-4xl font-bold text-neutral-100">Hi, I'm <a className="underline decoration-neutral-100">Lenor James Jamero</a></h1>
         <p className="mt-4 text-xl text-neutral-300 max-w-2xl text-justify">
           a <a className="underline decoration-neutral-300">Full Stack Developer</a> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design.
@@ -24,13 +24,15 @@ export default function Hero() {
             My Resume
           </button>
           <button>
-            <FaGithub className="text-neutral-100 text-4xl hover:text-neutral-300" />
+            <a href="https://github.com/RenoaJamezu">
+              <FaGithub className="text-neutral-100 text-4xl hover:text-neutral-300" />
+            </a>
           </button>
         </div>
       </div>
 
       {/* Right */}
-      <div className="w-1/3 flex justify-end items-center">
+      <div className="w-1/3 flex justify-end items-center px-5">
         <img
           src={HeroNor}
           alt="Portrait"
