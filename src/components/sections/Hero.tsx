@@ -39,7 +39,7 @@ export default function Hero() {
         <img
           src={HeroNor}
           alt="Portrait"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-neutral-500 transition-transform transform"
+          className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-neutral-800 transition-transform transform"
         />
       </div>
     </section>

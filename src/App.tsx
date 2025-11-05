@@ -1,20 +1,21 @@
 import './App.css'
 // import About from './components/sections/About'
-// import Connect from './components/sections/Connect'
+// import Contact from './components/sections/Contact'
 import Hero from './components/sections/Hero'
 // import Project from './components/sections/Project'
-// import Stack from './components/sections/Stack'
+ import Stack from './components/sections/Stack'
 
 function App() {
 
   return (
     <>
-      <main className="min-h-screen w-full flex justify-center items-center bg-black">
+      <main className="min-h-screen w-full flex flex-col justify-center items-center bg-black">
         <Hero />
-        {/*<About />
+        <hr className="w-11/12 h-1 bg-neutral-900 my-10" />
+        {/*<About />*/}
         <Stack />
-        <Project />
-        <Connect />*/}
+        {/* <Project /> */}
+        {/* <Contact /> */}
       </main>
     </>
   )
