@@ -1,7 +1,7 @@
 import './App.css'
-import Education from './components/sections/Education'
 // import About from './components/sections/About'
-// import Contact from './components/sections/Contact'
+import Contact from './components/sections/Contact'
+import Education from './components/sections/Education'
 import Hero from './components/sections/Hero'
 // import Project from './components/sections/Project'
  import Stack from './components/sections/Stack'
@@ -17,7 +17,8 @@ function App() {
         <Stack />
         {/* <Project /> */}
         <Education />
-        {/* <Contact /> */}
+        <hr className="w-11/12 h-1 bg-neutral-900 my-10" />
+        <Contact />
       </main>
     </>
   )
