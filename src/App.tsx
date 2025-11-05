@@ -10,14 +10,14 @@ function App() {
 
   return (
     <>
-      <main className="min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-b from-slate-950 to-black bg-no-repeat bg-cover bg-fixed">
+      <main className="min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-b from-slate-900 to-black bg-no-repeat bg-cover bg-fixed">
         <Hero />
-        <hr className="w-11/12 h-1 bg-linear-to-b from-slate-950 to-slate-200 my-10" />
+        <hr className="w-11/12 h-1 bg-linear-to-b from-slate-900 to-slate-200 my-10" />
         {/*<About />*/}
         <Stack />
         {/* <Project /> */}
         <Education />
-        <hr className="w-11/12 h-1 bg-linear-to-b from-slate-950 to-slate-200 my-10" />
+        <hr className="w-11/12 h-1 bg-linear-to-b from-slate-900 to-slate-200 my-10" />
         <Contact />
       </main>
     </>
