@@ -22,7 +22,7 @@ export default function Stack() {
     <section className="w-full max-w-6xl mx-auto px-4 py-12 flex flex-col">
       <div className="flex flex-col">
         <h1 className="text-neutral-100 text-3xl font-medium">Tech Stack</h1>
-        <p className="text-neutral-300 text-lg">here are some of my technologies I've work with:</p>
+        <p className="text-neutral-300">here are some of my technologies I've work with:</p>
       </div>
       <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {stacks.map((s) => (

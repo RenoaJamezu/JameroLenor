@@ -1,4 +1,5 @@
 import './App.css'
+import Education from './components/sections/Education'
 // import About from './components/sections/About'
 // import Contact from './components/sections/Contact'
 import Hero from './components/sections/Hero'
@@ -15,6 +16,7 @@ function App() {
         {/*<About />*/}
         <Stack />
         {/* <Project /> */}
+        <Education />
         {/* <Contact /> */}
       </main>
     </>
