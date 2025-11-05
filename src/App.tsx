@@ -1,5 +1,7 @@
 import './App.css'
+import Footer from './components/Footer'
 // import About from './components/sections/About'
+// import Certificate from './components/sections/Certificate'
 import Contact from './components/sections/Contact'
 import Education from './components/sections/Education'
 import Hero from './components/sections/Hero'
@@ -17,8 +19,10 @@ function App() {
         <Stack />
         {/* <Project /> */}
         <Education />
+        {/* <Certificate /> */}
         <hr className="w-11/12 h-1 bg-linear-to-b from-slate-900 to-slate-200 my-10" />
         <Contact />
+        <Footer />
       </main>
     </>
   )

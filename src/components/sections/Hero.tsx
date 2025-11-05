@@ -5,12 +5,12 @@ export default function Hero() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
       {/* Left */}
-      <div className="w-full md:w-2/3 flex flex-col justify-center text-center md:text-left px-2 md:px-5">
+      <div className="w-full md:w-2/3 flex flex-col justify-center text-center md:text-left">
         <h1 className="text-2xl text-justify sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-100">
           Hi, I'm <span className="underline decoration-neutral-100">Lenor James Jamero</span>
         </h1>
 
-        <p className="mt-4 text-base text-justify sm:text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto md:mx-0">
+        <p className="mt-4 text-base text-justify sm:text-lg md:text-xl text-neutral-300 max-w-2xl">
           a <span className="underline decoration-neutral-300">Full Stack Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design.
         </p>
 
@@ -35,12 +35,14 @@ export default function Hero() {
       </div>
 
       {/* Right */}
-      <div className="w-auto md:w-1/3 flex justify-center md:justify-end items-center px-5 mb-6 md:mb-0">
-        <img
-          src={HeroNor}
-          alt="Portrait"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-slate-900 transition-transform transform"
-        />
+      <div className="w-auto md:w-1/3 flex justify-center md:justify-end items-center p-3 md:p-0">
+        <div className="rounded-full border-4 border-slate-200/50 shadow-lg">
+          <img
+            src={HeroNor}
+            alt="Portrait"
+            className="w-full h-full rounded-full object-cover block"
+          />
+        </div>
       </div>
     </section>
   )
