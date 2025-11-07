@@ -25,7 +25,7 @@ export default function Stack() {
         <h1 className="text-neutral-100 text-3xl font-medium">Tech Stack</h1>
         <p className="text-neutral-300">here are some of my technologies I've work with:</p>
       </div>
-      <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {stacks.map((s) => (
             <StackBox key={s.name} stack={s} />
           ))}
