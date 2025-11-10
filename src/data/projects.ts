@@ -13,10 +13,10 @@ export const projects: ProjectItem[] = [
     team: "Meo Alcantara, Carl Lexter Buron, Lenor James Jamero",
   },
   {
-    name: "Dummy",
-    info: "lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum",
-    link: "",
-    team: "Dummy",
+    name: "Weather Weather",
+    info: "Weather Weather is a lightweight, full‑stack weather lookup app that combines a Laravel API with a React (Vite) frontend. It lets users search for a place name and returns current weather data from OpenWeatherMap, displayed in a clean, responsive UI.",
+    link: "https://weatherweatherapp.vercel.app/",
+    team: "Lenor James Jamero",
   },
 ];
 
