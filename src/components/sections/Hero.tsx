@@ -1,5 +1,5 @@
 import HeroNor from "../../assets/images/hero/HeroNor.jpeg"
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -24,12 +24,16 @@ export default function Hero() {
         </div>
 
         <div className="flex sm:flex-row mt-4 gap-3 px-1 items-center">
-          <button className="w-auto text-lg text-neutral-950 bg-neutral-100 px-4 py-2 rounded-lg hover:bg-neutral-300 transition">
+          <a href="https://drive.google.com/file/d/1ZacK1sjUehxeJb_hrYJNVBPKbAA225_p/view?usp=sharing" target="_blank" className="w-auto text-lg text-neutral-950 bg-neutral-100 px-4 py-2 rounded-lg hover:bg-neutral-300 transition">
             My Resume
-          </button>
+          </a>
 
           <a href="https://github.com/RenoaJamezu" target="_blank" className="text-neutral-100 hover:text-neutral-300">
             <FaGithub className="text-3xl sm:text-4xl" />
+          </a>
+
+          <a href="https://linkedin.com/in/lenor-james-jamero-462120396" target="_blank" className="text-neutral-100 hover:text-neutral-300">
+            <FaLinkedin className="text-3xl sm:text-4xl" />
           </a>
         </div>
       </div>

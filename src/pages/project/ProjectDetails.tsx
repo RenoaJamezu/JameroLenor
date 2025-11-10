@@ -15,11 +15,12 @@ export default function ProjectDetails() {
   }
 
   return (
-    <main className="min-h-screen w-full flex flex-col justify-center items-center bg-linear-to-b from-slate-900 to-black bg-no-repeat bg-cover bg-fixed">
+    <main className="min-h-screen w-full flex flex-col justify-center items-center px-4 bg-linear-to-b from-slate-900 to-black bg-no-repeat bg-cover bg-fixed">
       <div className="max-w-4xl w-full bg-neutral-900/30 border border-neutral-500/40 rounded-lg p-6">
         <h1 className="text-4xl text-neutral-100 mb-2">{project.name}</h1>
         <p className="text-neutral-300 mb-4">{project.info}</p>
-        <div className="text-neutral-400 mb-6">Team: {project.team}</div>
+        <div className="text-neutral-400">Team: {project.team}</div>
+        <div className="text-neutral-400 mb-6">Technologies used: {project.tech}</div>
         {project.link ? (
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400">
             Open live project

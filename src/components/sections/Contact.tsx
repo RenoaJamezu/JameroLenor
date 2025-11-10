@@ -1,5 +1,5 @@
 import { SiGmail } from "react-icons/si";
-import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import ContactBox from "../ui/ContactBox";
 
 
@@ -8,6 +8,7 @@ export default function Contact() {
     { name: "JameroLenor@gmail.com", title: "Email", link: "mailto:jamerolenor@gmail.com", icon: <SiGmail />},
     { name: "RenoaJamezu", title: "Github", link: "https://github.com/RenoaJamezu", icon: <FaGithub />},
     { name: "Lenor James Jamero", title: "Facebook", link: "https://facebook.com/lenorjamesjamero", icon: <FaFacebook />},
+    { name: "Lenor James Jamero", title: "LinkedIn", link: "https://linkedin.com/in/lenor-james-jamero-462120396", icon: <FaLinkedin />},
   ]
 
   return (
