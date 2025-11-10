@@ -1,5 +1,5 @@
 export type ProjectItem = {
-  name?: string;
+  name: string;
   info?: string;
   link?: string;
   team?: string;
