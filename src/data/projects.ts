@@ -15,7 +15,7 @@ export const projects: ProjectItem[] = [
   {
     name: "Weather Weather",
     info: "Weather Weather is a lightweight, full‑stack weather lookup app that combines a Laravel API with a React (Vite) frontend. It lets users search for a place name and returns current weather data from OpenWeatherMap, displayed in a clean, responsive UI.",
-    link: "https://weatherweatherapp.vercel.app/",
+    link: "https://weather-weather-frontend.vercel.app/",
     team: "Lenor James Jamero",
   },
 ];
