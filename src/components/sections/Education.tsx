@@ -8,7 +8,7 @@ export default function Education() {
         <div className="flex mt-3 justify-between">
           <p className="text-neutral-100 font-medium">2021 - 2025</p>
           <button className="text-neutral-50 hover:text-neutral-500">
-            <a href="">
+            <a href="https://drive.google.com/file/d/1dVdhD9y5uFkHWUeJ0XwNNyYh_XVoOz3g/view?usp=sharing" target="_blank">
               <IoLinkOutline className="h-5 w-5"/>
             </a>
           </button>
