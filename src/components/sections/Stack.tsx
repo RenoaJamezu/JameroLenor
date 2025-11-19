@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaLaravel, FaGitAlt, FaJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaLaravel, FaGitAlt, FaJs, FaPhp } from "react-icons/fa";
 import { SiExpress, SiSupabase, SiPostgresql, SiTailwindcss, SiMysql, SiTypescript, SiMongodb, SiVite } from "react-icons/si";
 import StackBox from "../ui/StackBox";
 
@@ -17,6 +17,7 @@ export default function Stack() {
     { name: "Laravel", icon: <FaLaravel /> },
     { name: "Vite", icon: <SiVite /> },
     { name: "Git", icon: <FaGitAlt /> },
+    { name: "PHP", icon: <FaPhp /> },
   ];
 
   return (
