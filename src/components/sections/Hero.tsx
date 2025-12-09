@@ -10,12 +10,12 @@ export default function Hero() {
           Hi, I'm <span className="underline decoration-neutral-100">Lenor James Jamero</span>
         </h1>
 
-        <p className="mt-4 text-base text-justify sm:text-lg text-neutral-300 max-w-2xl">
-          a <span className="underline decoration-neutral-300">Full Stack Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design.
-        </p>
+        <span className="mt-4 text-base text-justify sm:text-lg text-neutral-300 max-w-2xl">
+          a <span className="underline decoration-neutral-300">Full Stack Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design. Currenly working on a personal project called BlogTomasu.
+        </span>
 
         <div className="flex mt-4 gap-3 items-center text-justify md:justify-start">
-          <p className="text-base sm:text-lg text-neutral-200">Available for work</p>
+          <span className="text-base sm:text-lg text-neutral-200">Available for work</span>
 
           <div className="relative flex items-center">
             <span className="absolute inline-flex rounded-full bg-green-500 opacity-75 animate-ping h-3 w-3 sm:h-4 sm:w-4"></span>

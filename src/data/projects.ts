@@ -8,6 +8,13 @@ export type ProjectItem = {
 
 export const projects: ProjectItem[] = [
   {
+    name: "BlogTomasu",
+    info: "is a modern full-stack blogging platform where users can create, share, and explore posts in a clean and intuitive interface. It features secure authentication with JWT cookies, a fast TypeScript + Node backend, and an optimized React frontend focused on preventing unnecessary rerenders and delivering a smooth user experience.",
+    link: "https://blogtomasu.vercel.app",
+    team: "Lenor James Jamero",
+    tech: "MERN Stack",
+  },
+  {
     name: "Pillpoint",
     info: "PillPoint is a React + Vite web application that serves as a pharmaceutical e‑commerce platform with three distinct user experiences: Buyers (clients) who browse and purchase medicines, Sellers who manage inventory and sales, and Administrators who manage the system, reports, and contacts. The app prioritizes modular UI, fast local development with Vite, and responsive styling via Tailwind CSS and MUI components.",
     link: "https://pillpoint.vercel.app",
