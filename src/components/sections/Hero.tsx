@@ -11,7 +11,7 @@ export default function Hero() {
         </h1>
 
         <span className="mt-4 text-base text-justify sm:text-lg text-neutral-300 max-w-2xl">
-          a <span className="underline decoration-neutral-300">Full Stack Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design. Currenly working on a personal project called BlogTomasu.
+          a <span className="underline decoration-neutral-300">Junior Developer</span> who builds dynamic and reliable web applications. I’m passionate about turning ideas into functional digital experiences that prioritize performance, usability, and modern design. Currenly working on a personal project called BlogTomasu.
         </span>
 
         <div className="flex mt-4 gap-3 items-center text-justify md:justify-start">
