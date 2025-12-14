@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function BlogTomasu() {
@@ -16,6 +17,9 @@ function BlogTomasu() {
             <h1 className="text-4xl text-white font-bold">BlogTomasu</h1>
 
             <div className="flex items-center gap-3">
+              <a href="https://github.com/RenoaJamezu/blogtomasu" target="_blank" className="text-neutral-100 hover:text-neutral-300">
+                <FaGithub className="text-3xl sm:text-4xl" />
+              </a>
               <span className="px-3 py-1 bg-white text-black rounded-full font-medium">Completed</span>
               <a href="https://blogtomasu.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
                 Open live project
