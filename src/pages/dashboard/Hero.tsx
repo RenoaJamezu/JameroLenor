@@ -6,8 +6,8 @@ export default function Hero() {
       <div>
         <div className="space-y-10">
           <p className="text-blue-900 font-medium">Hello, I'm</p>
-          <h1 className="text-white font-bold text-7xl">Lenor James</h1>
-          <p className="text-gray-500 font-medium w-1/2">I’m a junior full-stack developer who builds modern, reliable web applications with clean code and strong attention to user experience. I’m eager to learn, adapt fast, and contribute real value to your team.</p>
+          <h1 className="text-white font-bold text-4xl md:text-7xl">Lenor James</h1>
+          <p className="text-gray-500 font-medium md:w-1/2 mb-3">I’m a junior full-stack developer who builds modern, reliable web applications with clean code and strong attention to user experience. I’m eager to learn, adapt fast, and contribute real value to your team.</p>
         </div>
 
         <div className="space-x-3">

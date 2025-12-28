@@ -33,7 +33,7 @@ export default function Contact() {
       <h1 className="text-4xl text-white">Contact</h1>
       <p className="text-gray-500">If you'd like to contact me, you can reach me using the following methods.</p>
 
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-5">
         {contacts.map(({ name, title, link, icon }) => (
           <div className="bg-neutral-900/30 backdrop-blur-sm backdrop-saturate-150 border border-neutral-500 rounded-lg p-4 flex items-center gap-2 min-w-35 sm:min-w-40 shadow-sm hover:scale-105 hover:border-neutral-50 transition-transform max-w-full">
             <a href={link} target="_blank" className="w-full">
