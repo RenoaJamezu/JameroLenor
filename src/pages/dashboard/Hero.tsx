@@ -11,11 +11,15 @@ export default function Hero() {
         </div>
 
         <div className="space-x-3">
-          <Button>
+          <Button
+            className="hover:bg-blue-950"
+          >
             View Resume
           </Button>
-          <Button>
-            Get it Touch
+          <Button
+            className="hover:bg-blue-950"
+          >
+            <a href="#contact">Get it Touch</a>
           </Button>
         </div>
 
