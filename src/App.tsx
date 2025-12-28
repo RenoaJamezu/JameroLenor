@@ -1,7 +1,6 @@
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/home/Home'
-import ProjectPage from './pages/project/ProjectPage'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css"
+import Layout from "./pages/dashboard/Layout";
 
 function App() {
 
@@ -9,8 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Home />} />\
-          <Route path='/project/:slug' element={<ProjectPage />} />
+          <Route path="/" element={<Layout />} />
         </Routes>
       </Router>
     </>
