@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="space-y-6 md:space-y-10 text-center md:text-left">
         <p className="text-blue-800 font-medium text-sm md:text-base">Hello, I'm</p>
         <h1 className="text-white font-bold text-3xl md:text-6xl">Lenor James</h1>
-        <p className="text-gray-400 font-medium text-sm md:text-base">I'm a junior full-stack developer who builds modern, reliable web applications with clean code and strong attention to user experience. I'm eager to learn, adapt fast, and contribute real value to your team.</p>
+        <p className="text-gray-400 font-medium text-sm md:text-base">I’m a Full Stack Developer passionate about building web applications. I work primarily with React, Node.js, Express, and MongoDB, and I also have experience using Laravel and PostgreSQL. I enjoy turning ideas into reliable solutions and continuously improving my skills across the full stack.</p>
         <div className="flex gap-3 justify-center md:justify-start">
           <Button
             className="hover:bg-blue-800 shadow-sm shadow-white/20"
