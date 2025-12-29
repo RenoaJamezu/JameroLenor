@@ -15,12 +15,12 @@ export default function Skills() {
   ]
   return (
     <section id="skills" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono caret-transparent">
-      <h1 className="text-2xl md:text-4xl text-white">Skills</h1>
+      <h1 className="text-xl md:text-2xl text-white">Skills</h1>
       <p className="text-sm md:text-base text-gray-500">Here are some technologies I worked with:</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {tech.map(({ tech, icon }) => (
-          <div key={tech} className="rounded-xl bg-primary/50 text-gray-500 px-3 py-2 flex space-x-2 items-center justify-center text-sm md:text-xl transition-all duration-300 hover:text-white hover:scale-105 shadow-sm shadow-white/20">
+          <div key={tech} className="rounded-xl bg-primary/50 text-gray-500 px-3 py-2 flex space-x-2 items-center justify-center text-sm md:text-base transition-all duration-300 hover:text-white hover:scale-105 shadow-sm shadow-white/20">
             <h1>{tech}</h1>
             {icon}
           </div>
