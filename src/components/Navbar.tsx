@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 const sections = [
   { to: "skills", label: "Skills" },
   { to: "projects", label: "Projects" },
+  { to: "education", label: "Education" },
   { to: "contact", label: "Contact" },
 ]
 
@@ -31,7 +32,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 w-full z-50 transition-colors font-mono caret-transparent ${
         scrolled
-          ? "backdrop-blur-sm bg-gray-950/70 border-b border-gray-800"
+          ? "backdrop-blur-xl bg-gray-950/70 border-b border-gray-800"
           : "bg-transparent"
       }`}
     >

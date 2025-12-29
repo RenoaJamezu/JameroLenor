@@ -29,22 +29,22 @@ export default function Contact() {
     },
   ]
   return (
-    <section id="contact" className="scroll-mt-20 px-4 md:px-50 py-10 md:py-30 flex flex-col bg-gray-950 justify-center space-y-10 font-mono text-center">
+    <section id="contact" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-gray-950 justify-center space-y-10 font-mono text-center caret-transparent">
       <h1 className="text-4xl text-white">Contact</h1>
       <p className="text-gray-500">If you'd like to contact me, you can reach me using the following methods.</p>
 
       <div className="grid md:grid-cols-2 gap-5">
         {contacts.map(({ name, title, link, icon }) => (
-          <div className="bg-neutral-900/30 backdrop-blur-sm backdrop-saturate-150 border border-neutral-500 rounded-lg p-4 flex items-center gap-2 min-w-35 sm:min-w-40 shadow-sm hover:scale-105 hover:border-neutral-50 transition-transform max-w-full">
+          <div className="bg-primary/50 backdrop-blur-sm backdrop-saturate-150 p-4 flex items-center gap-2 min-w-35 sm:min-w-40 hover:scale-105 transition max-w-full text-white hover:text-blue-800 shadow-sm shadow-white/20 duration-300">
             <a href={link} target="_blank" className="w-full">
               <div className="flex justify-between items-center">
                 <div className="flex gap-3">
-                  <div className="text-2xl text-neutral-100">{icon}</div>
-                  <div className="text-neutral-100 text-sm">{title}</div>
+                  <div className="text-2xl">{icon}</div>
+                  <div className="text-sm">{title}</div>
                 </div>
-                <FaExternalLinkAlt className="text-neutral-50" />
+                <FaExternalLinkAlt />
               </div>
-              <p className="text-neutral-500 mt-1">{name}</p>
+              <p className="mt-1 text-gray-500">{name}</p>
             </a>
           </div>
         ))}

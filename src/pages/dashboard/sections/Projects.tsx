@@ -16,7 +16,7 @@ export default function Projects() {
     },
   ]
   return (
-    <section id="projects" className="scroll-mt-20 px-4 md:px-50 py-10 md:py-30 flex flex-col bg-gray-950 justify-center space-y-10 font-mono">
+    <section id="projects" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono caret-transparent">
       <h1 className="text-4xl text-white">Featured Projects</h1>
       <p className="text-gray-500">A collection of my projects showcasing my skills and passion in creating meaningful digital experiences:</p>
 
@@ -27,7 +27,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             key={title}
-            className="group border border-gray-700 rounded-xl overflow-hidden flex flex-col text-white transition-all duration-300 hover:border-blue-500 hover:text-blue-900 shadow">
+            className="group rounded-xl overflow-hidden flex flex-col text-white transition-all duration-300 hover:text-blue-800 backdrop-blur-xl bg-primary/50 shadow-sm shadow-white/20">
             <div className="overflow-hidden aspect-video">
               <img
                 src={src}
@@ -35,7 +35,7 @@ export default function Projects() {
               />
             </div>
             <div className="p-5 space-y-3 flex flex-col grow">
-              <p className="text-blue-900 text-sm">{responsive}</p>
+              <p className="text-blue-800 text-sm">{responsive}</p>
               <h1 className="text-xl font-semibold">{title}</h1>
               <p className="text-gray-500 text-sm grow">{description}</p>
               <p className="font-medium mt-4">

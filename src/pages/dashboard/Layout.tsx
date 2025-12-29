@@ -1,8 +1,9 @@
 import Navbar from "../../components/Navbar";
-import Contact from "./Contact";
-import Hero from "./Hero";
-import Project from "./Projects";
-import Skills from "./Skills";
+import Contact from "./sections/Contact";
+import Education from "./sections/Education";
+import Hero from "./sections/Hero";
+import Project from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 export default function Layout() {
   return (
@@ -12,6 +13,7 @@ export default function Layout() {
       <Hero />
       <Skills />
       <Project />
+      <Education />
       <Contact />
     </main>
   )

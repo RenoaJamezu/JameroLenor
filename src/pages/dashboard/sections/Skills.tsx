@@ -14,13 +14,13 @@ export default function Skills() {
     { tech: "PostgreSQL", icon: <DiPostgresql /> },
   ]
   return (
-    <section id="skills" className="scroll-mt-20 px-4 md:px-50 py-10 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono">
+    <section id="skills" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono caret-transparent">
       <h1 className="text-4xl text-white">Skills</h1>
       <p className="text-gray-500">Here are some technologies I worked with:</p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {tech.map(({ tech, icon }) => (
-          <div key={tech} className="border rounded-xl text-gray-500 px-3 py-1 flex space-x-2 items-center justify-center text-md md:text-xl transition-all duration-300 hover:text-white">
+          <div key={tech} className="rounded-xl bg-primary/50 text-gray-500 px-3 py-2 flex space-x-2 items-center justify-center text-md md:text-xl transition-all duration-300 hover:text-white hover:scale-105 shadow-sm shadow-white/20">
             <h1>{tech}</h1>
             {icon}
           </div>
