@@ -30,8 +30,8 @@ export default function Contact() {
   ]
   return (
     <section id="contact" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-gray-950 justify-center space-y-10 font-mono text-center caret-transparent">
-      <h1 className="text-4xl text-white">Contact</h1>
-      <p className="text-gray-500">If you'd like to contact me, you can reach me using the following methods.</p>
+      <h1 className="text-2xl md:text-4xl text-white">Contact</h1>
+      <p className="text-sm md:text-base text-gray-500">If you'd like to contact me, you can reach me using the following methods.</p>
 
       <div className="grid md:grid-cols-2 gap-5">
         {contacts.map(({ name, title, link, icon }) => (
@@ -39,12 +39,12 @@ export default function Contact() {
             <a href={link} target="_blank" className="w-full">
               <div className="flex justify-between items-center">
                 <div className="flex gap-3">
-                  <div className="text-2xl">{icon}</div>
-                  <div className="text-sm">{title}</div>
+                  <div className="text-lg md:text-2xl">{icon}</div>
+                  <div className="text-xs md:text-base">{title}</div>
                 </div>
-                <FaExternalLinkAlt />
+                <FaExternalLinkAlt className="text-xs md:text-base"/>
               </div>
-              <p className="mt-1 text-gray-500">{name}</p>
+              <p className="text-xs md:text-base mt-1 text-gray-500">{name}</p>
             </a>
           </div>
         ))}

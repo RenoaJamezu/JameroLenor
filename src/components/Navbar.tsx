@@ -30,13 +30,13 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-colors font-mono caret-transparent ${
-        scrolled
+      className={`fixed top-0 w-full z-50 transition-colors font-mono caret-transparent px-5 md:px-50 ${
+        scrolled || open
           ? "backdrop-blur-xl bg-gray-950/70 border-b border-gray-800"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 sm:h-20 max-w-6xl items-center justify-between px-4 sm:px-6 md:px-10">
+      <div className="mx-auto flex h-16 sm:h-20 max-w-6xl items-center justify-between">
         <a href="#hero" className="text-2xl font-bold text-white">
           LJ
         </a>
@@ -74,10 +74,10 @@ export default function Navbar() {
 
       <div
         className={`sm:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
-          open ? "max-h-60 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+          open ? "max-h-60 opacity-100" : "max-h-0 opacity-0 pointer-events-none "
         }`}
       >
-        <div className="flex flex-col gap-1 bg-gray-950/95 p-4">
+        <div className="flex flex-col gap-1 pb-4">
           {sections.map(({ to, label }) => (
             <a
               key={to}

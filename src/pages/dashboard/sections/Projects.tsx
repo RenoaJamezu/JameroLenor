@@ -17,8 +17,8 @@ export default function Projects() {
   ]
   return (
     <section id="projects" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono caret-transparent">
-      <h1 className="text-4xl text-white">Featured Projects</h1>
-      <p className="text-gray-500">A collection of my projects showcasing my skills and passion in creating meaningful digital experiences:</p>
+      <h1 className="text-2xl md:text-4xl text-white">Featured Projects</h1>
+      <p className="text-sm md:text-lg text-gray-500">A collection of my projects showcasing my skills and passion in creating meaningful digital experiences:</p>
 
       <div className="grid md:grid-cols-2 gap-5">
         {projects.map(({ title, description, src, responsive, link }) => (
