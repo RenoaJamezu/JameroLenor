@@ -9,7 +9,7 @@ export default function Education() {
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-col w-fit bg-primary/50 p-5 rounded-xl text-white group">
-        <div className="mt-1 flex gap-2 items-center hover:text-blue-800">
+        <div className="mt-1 flex gap-2 items-center group-hover:text-blue-800">
           <p className="text-xl font-medium">2021 - 2025</p>
           <FaLink className="text-sm"/>
         </div>

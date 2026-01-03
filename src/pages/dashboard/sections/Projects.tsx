@@ -1,27 +1,13 @@
+import { projects } from "../../../constant/projects";
+
 export default function Projects() {
-  const projects = [
-    {
-      title: "Blogtomasu",
-      description: "A clean, user-friendly blogging platform that lets users create, share, and engage with content effortlessly — focused on simplicity, readability, and community interaction.",
-      src: "/images/blogtomasu.png",
-      responsive: "WEB APP - MOBILE RESPONSIVE",
-      link: "https://blogtomasu.vercel.app"
-    },
-    {
-      title: "LocalServiceHub",
-      description: "A marketplace connecting local service providers with customers, making it easy to discover, book, and manage trusted services in your area.",
-      src: "/images/localservicehub.png",
-      responsive: "WEB APP - MOBILE RESPONSIVE",
-      link: "https://local-service-hub-kohl.vercel.app"
-    },
-  ]
   return (
     <section id="projects" className="scroll-mt-20 px-4 md:px-50 py-20 md:py-30 flex flex-col bg-black justify-center space-y-10 font-mono caret-transparent">
       <h1 className="text-xl md:text-2xl text-white">Featured Projects</h1>
       <p className="text-sm md:text-base text-gray-500">A collection of my projects showcasing my skills and passion in creating meaningful digital experiences:</p>
 
       <div className="grid md:grid-cols-2 gap-5">
-        {projects.map(({ title, description, src, responsive, link }) => (
+        {projects.slice(0, 2).map(({ title, description, src, responsive, link }) => (
           <a
             href={link}
             target="_blank"

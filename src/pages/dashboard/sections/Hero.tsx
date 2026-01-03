@@ -17,13 +17,22 @@ export default function Hero() {
       <div className="space-y-6 md:space-y-10 text-center md:text-left">
         <p className="text-blue-800 font-medium text-sm md:text-base">Hello, I'm</p>
         <h1 className="text-white font-bold text-3xl md:text-6xl">Lenor James</h1>
-        <p className="text-gray-400 font-medium text-sm md:text-base">I’m a Full Stack Developer passionate about building web applications. I work primarily with React, Node.js, Express, and MongoDB, and I also have experience using Laravel and PostgreSQL. I enjoy turning ideas into reliable solutions and continuously improving my skills across the full stack.</p>
+        <div className="space-y-2">
+          <p className="text-gray-400 font-medium text-justify text-sm md:text-base">I’m a Full Stack Developer passionate about building web applications. I work primarily with React, Node.js, Express, and MongoDB, and I also have experience using Laravel and PostgreSQL. I enjoy turning ideas into reliable solutions and continuously improving my skills across the full stack.</p>
+          <div className="flex gap-3 items-center">
+            <p className="text-gray-400 font-medium text-sm md:text-base">Available for work </p>
+            <div className="flex items-center">
+              <span className="absolute r-0 bg-green-500 w-2.5 h-2.5 rounded-full"></span>
+              <span className="absolute r-0 bg-green-500 w-2.5 h-2.5 rounded-full animate-ping duration-300"></span>
+            </div>
+          </div>
+        </div>
         <div className="flex gap-3 justify-center md:justify-start">
-          <Button
+          {/* <Button
             className="hover:bg-blue-800 shadow-sm shadow-white/20"
           >
             View Resume
-          </Button>
+          </Button> */}
           <Button
             className="hover:bg-blue-800 shadow-sm shadow-white/20"
           >

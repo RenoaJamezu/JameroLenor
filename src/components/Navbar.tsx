@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 
 const sections = [
-  { to: "skills", label: "Skills" },
-  { to: "projects", label: "Projects" },
-  { to: "education", label: "Education" },
-  { to: "contact", label: "Contact" },
+  { to: "/#skills", label: "Skills" },
+  { to: "/projects", label: "Projects" },
+  { to: "/#education", label: "Education" },
+  { to: "/#contact", label: "Contact" },
 ]
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 sm:h-20 max-w-6xl items-center justify-between">
-        <a href="#hero" className="text-2xl font-bold text-white">
+        <a href="/" className="text-2xl font-bold text-white">
           LJ
         </a>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
           {sections.map(({ to, label }) => (
             <a
               key={to}
-              href={`#${to}`}
+              href={to}
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
               {label}
