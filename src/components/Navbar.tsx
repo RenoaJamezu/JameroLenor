@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { Button } from "./ui/button"
+import { useNavigate, useLocation } from "react-router-dom"
 
 const sections = [
   { to: "/#skills", label: "Skills" },
@@ -10,6 +12,9 @@ const sections = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -26,7 +31,31 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
-  const handleNavClick = () => setOpen(false)
+  const handleNavClick = (to: string) => {
+    setOpen(false)
+
+    if (to === "/projects") {
+      navigate("/projects")
+      window.scrollTo(0, 0)
+    } else {
+      const hash = to.split("#")[1]
+
+      if (location.pathname !== "/") {
+        navigate("/")
+        setTimeout(() => {
+          const element = document.getElementById(hash)
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" })
+          }
+        }, 200)
+      } else {
+        const element = document.getElementById(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" })
+        }
+      }
+    }
+  }
 
   return (
     <header
@@ -37,19 +66,20 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 sm:h-20 max-w-6xl items-center justify-between">
-        <a href="/" className="text-2xl font-bold text-white">
+        <button onClick={() => navigate("/")} className="text-2xl font-bold text-white">
           LJ
-        </a>
+        </button>
 
         <nav className="hidden sm:flex items-center gap-1">
           {sections.map(({ to, label }) => (
-            <a
+            <Button
               key={to}
-              href={to}
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              onClick={() => handleNavClick(to)}
+              variant={"ghost"}
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:bg-transparent"
             >
               {label}
-            </a>
+            </Button>
           ))}
         </nav>
 
@@ -79,14 +109,14 @@ export default function Navbar() {
       >
         <div className="flex flex-col gap-1 pb-4">
           {sections.map(({ to, label }) => (
-            <a
+            <Button
               key={to}
-              href={`#${to}`}
-              onClick={handleNavClick}
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-200 transition-colors hover:bg-gray-900 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              onClick={() => handleNavClick(to)}
+              variant={"ghost"}
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-200 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:bg-transparent text-left"
             >
               {label}
-            </a>
+            </Button>
           ))}
         </div>
       </div>
