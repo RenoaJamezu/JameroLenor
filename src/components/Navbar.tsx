@@ -1,20 +1,16 @@
 import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
-import { useNavigate, useLocation } from "react-router-dom"
 
 const sections = [
-  { to: "/#skills", label: "Skills" },
-  { to: "/projects", label: "Projects" },
-  { to: "/#education", label: "Education" },
-  { to: "/#contact", label: "Contact" },
+  { to: "#skills", label: "Skills" },
+  { to: "#projects", label: "Projects" },
+  { to: "#education", label: "Education" },
+  { to: "#contact", label: "Contact" },
 ]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-
-  const navigate = useNavigate()
-  const location = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -31,29 +27,18 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
-  const handleNavClick = (to: string) => {
-    setOpen(false)
+  const handleClick = (to: string) => {
+    const element = document.querySelector(to)
+    if (element) {
+      const navbarHeight = 80
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight
 
-    if (to === "/projects") {
-      navigate("/projects")
-      window.scrollTo(0, 0)
-    } else {
-      const hash = to.split("#")[1]
-
-      if (location.pathname !== "/") {
-        navigate("/")
-        setTimeout(() => {
-          const element = document.getElementById(hash)
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" })
-          }
-        }, 200)
-      } else {
-        const element = document.getElementById(hash)
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" })
-        }
-      }
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      })
+      setOpen(false)
     }
   }
 
@@ -66,7 +51,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 sm:h-20 max-w-6xl items-center justify-between">
-        <button onClick={() => navigate("/")} className="text-2xl font-bold text-white">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-2xl font-bold text-white cursor-pointer">
           LJ
         </button>
 
@@ -74,9 +59,9 @@ export default function Navbar() {
           {sections.map(({ to, label }) => (
             <Button
               key={to}
-              onClick={() => handleNavClick(to)}
+              onClick={() => handleClick(to)}
               variant={"ghost"}
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:bg-transparent"
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:bg-transparent cursor-pointer"
             >
               {label}
             </Button>
@@ -111,7 +96,7 @@ export default function Navbar() {
           {sections.map(({ to, label }) => (
             <Button
               key={to}
-              onClick={() => handleNavClick(to)}
+              onClick={() => handleClick(to)}
               variant={"ghost"}
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-200 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:bg-transparent text-left"
             >

@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css"
-import Layout from "./pages/dashboard/Layout";
 import { lazy, Suspense } from "react";
 
 
 function App() {
-  const Projects = lazy(() => import("./pages/projects/Projects"))
+  const Layout = lazy(() => import("./pages/dashboard/Layout"))
 
   const PageLoader = () => (
     <div className="flex items-center justify-center min-h-screen">
@@ -19,7 +18,6 @@ function App() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Layout />} />
-            <Route path="/projects" element={<Projects />} />
           </Routes>
         </Suspense>
       </Router>

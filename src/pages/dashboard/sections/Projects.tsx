@@ -6,12 +6,11 @@ export default function Projects() {
       <h1 className="text-xl md:text-2xl text-white">Featured Projects</h1>
       <p className="text-sm md:text-base text-gray-500">A collection of my projects showcasing my skills and passion in creating meaningful digital experiences:</p>
 
-      <div className="grid md:grid-cols-2 gap-5">
-        {projects.slice(0, 2).map(({ title, description, src, responsive, link }) => (
+      <div className="grid md:grid-cols-3 gap-5">
+        {projects.map(({ title, description, src, responsive, link }) => (
           <a
             href={link}
             target="_blank"
-            rel="noopener noreferrer"
             key={title}
             className="group rounded-xl overflow-hidden flex flex-col text-white transition-all duration-300 hover:text-blue-800 backdrop-blur-xl bg-primary/50 shadow-sm shadow-white/20">
             <div className="overflow-hidden aspect-video">
@@ -21,10 +20,10 @@ export default function Projects() {
               />
             </div>
             <div className="p-5 space-y-3 flex flex-col grow">
-              <p className="text-blue-800 text-sm">{responsive}</p>
-              <h1 className="text-xl font-semibold">{title}</h1>
-              <p className="text-gray-500 text-sm grow">{description}</p>
-              <p className="font-medium mt-4">
+              <p className="text-blue-800 text-xs">{responsive}</p>
+              <h1 className="text-lg font-semibold">{title}</h1>
+              <p className="text-gray-500 text-xs grow">{description}</p>
+              <p className="font-medium mt-4 text-sm">
                 View Project →
               </p>
             </div>
