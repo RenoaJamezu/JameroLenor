@@ -10,6 +10,7 @@ interface ProjectModalProps {
     responsive: string;
     link: string;
     tech: string | string[];
+    feat: string | string[];
   };
   onClose: () => void;
 }
@@ -17,6 +18,7 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const images = Array.isArray(project.src) ? project.src : [project.src];
   const technologies = Array.isArray(project.tech) ? project.tech : [project.tech];
+  const features = Array.isArray(project.feat) ? project.feat : [project.feat];
   const [selectedImage, setSelectedImage] = useState(0);
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
@@ -73,6 +75,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <h2 className="font-semibold text-white text-sm md:text-base">Technologies:</h2>
               <div className="flex flex-wrap gap-2">
                 {technologies.map((tech) => (
+                  <span key={tech} className="text-blue-800 text-xs px-3 py-1 bg-blue-800/10 rounded-full">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-2 md:space-y-3">
+              <h2 className="font-semibold text-white text-sm md:text-base">Features:</h2>
+              <div className="flex flex-wrap gap-2">
+                {features.map((tech) => (
                   <span key={tech} className="text-blue-800 text-xs px-3 py-1 bg-blue-800/10 rounded-full">
                     {tech}
                   </span>

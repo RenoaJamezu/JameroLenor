@@ -11,7 +11,13 @@ export const projects = [
     ],
     responsive: "WEB APP - MOBILE RESPONSIVE",
     link: "https://blogtomasu.vercel.app",
-    tech: "MERN Stack"
+    tech: "MERN Stack",
+    feat: [
+      "User Authication",
+      "Blog Post Management (CRUD)",
+      "Rich-text editor for posts",
+      "Responsive UI",
+    ]
   },
   {
     title: "LocalServiceHub",
@@ -28,7 +34,14 @@ export const projects = [
     ],
     responsive: "WEB APP - MOBILE RESPONSIVE",
     link: "https://local-service-hub-kohl.vercel.app",
-    tech: "MERN Stack"
+    tech: "MERN Stack",
+    feat: [
+      "User Authication",
+      "Service Listing Management (CRUD)",
+      "Book Services",
+      "User & Provider Data Handling",
+      "Responsive UI",
+    ]
   },
   {
     title: "WeatherWeatherApp",
@@ -36,6 +49,10 @@ export const projects = [
     src: ["/images/weather.png"],
     responsive: "WEB APP - MOBILE RESPONSIVE",
     link: "https://weather-weather-frontend.vercel.app",
-    tech: ["Bootstrap", "React"]
+    tech: ["Bootstrap", "React"],
+    feat: [
+      "Responsive UI",
+      "Integrating OpenWeatherMap",
+    ]
   },
 ]
