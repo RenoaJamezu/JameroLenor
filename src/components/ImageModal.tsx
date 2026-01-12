@@ -11,7 +11,7 @@ export default function ImageModal({ src, alt, onClose }: ImageModalProps) {
       onClick={onClose}
     >
       <div 
-        className="w-full max-w-2xl md:max-w-3xl fade-zoom-in p-5 bg-primary rounded-xl"
+        className="w-full max-w-2xl md:max-w-3xl fade-zoom-in rounded-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <img
