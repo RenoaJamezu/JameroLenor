@@ -35,7 +35,7 @@ export default function Contact() {
 
       <div className="grid md:grid-cols-2 gap-5">
         {contacts.map(({ name, title, link, icon }) => (
-          <div className="bg-primary/50 backdrop-blur-sm backdrop-saturate-150 p-4 flex items-center gap-2 min-w-35 sm:min-w-40 hover:scale-105 transition max-w-full text-white hover:text-blue-800 shadow-sm shadow-white/20 duration-300">
+          <div key={title} className="bg-primary/50 backdrop-blur-sm backdrop-saturate-150 p-4 flex items-center gap-2 min-w-35 sm:min-w-40 hover:scale-105 transition max-w-full text-white hover:text-blue-800 shadow-sm shadow-white/20 duration-300">
             <a href={link} target="_blank" className="w-full">
               <div className="flex justify-between items-center">
                 <div className="flex gap-3">

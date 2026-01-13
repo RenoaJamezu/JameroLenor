@@ -26,18 +26,20 @@ export default function Hero() {
               <span className="absolute r-0 bg-green-500 w-2.5 h-2.5 rounded-full animate-ping duration-300"></span>
             </div>
           </div>
-        </div>
-        <div className="flex gap-3 justify-center md:justify-start">
-          {/* <Button
-            className="hover:bg-blue-800 shadow-sm shadow-white/20"
-          >
-            View Resume
-          </Button> */}
-          <Button
-            className="hover:bg-blue-800 shadow-sm shadow-white/20"
-          >
-            <a href="#contact">Get in Touch</a>
-          </Button>
+          <div className="flex gap-3 justify-center md:justify-start mt-3">
+            <a href="/pdfs/resume.pdf" target="_blank">
+              <Button
+                className="hover:bg-blue-800 shadow-sm shadow-white/20"
+              >
+                View Resume
+              </Button>
+            </a>
+            <Button
+              className="hover:bg-blue-800 shadow-sm shadow-white/20"
+            >
+              <a href="#contact">Get in Touch</a>
+            </Button>
+          </div>
         </div>
       </div>
 
