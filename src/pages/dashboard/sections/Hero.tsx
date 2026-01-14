@@ -26,7 +26,7 @@ export default function Hero() {
               <span className="absolute r-0 bg-green-500 w-2.5 h-2.5 rounded-full animate-ping duration-300"></span>
             </div>
           </div>
-          <div className="flex gap-3 justify-center md:justify-start mt-3">
+          <div className="flex gap-3 justify-center md:justify-start mt-3 items-center">
             <a href="/pdfs/resume.pdf" target="_blank">
               <Button
                 className="hover:bg-blue-800 shadow-sm shadow-white/20"
@@ -39,13 +39,18 @@ export default function Hero() {
             >
               <a href="#contact">Get in Touch</a>
             </Button>
+            {/* <a href="https://github.com/RenoaJamezu" target="_blank"
+              className="text-2xl md:text-3xl text-white hover:text-gray-500 duration-300 transition-all"
+            >
+              <FaGithub />
+            </a> */}
           </div>
         </div>
       </div>
 
       <div className="flex justify-center items-center">
         <img
-          src="/images/me.png"
+          src="/images/me-2.png"
           alt="Lenor James"
           className="w-48 h-48 md:w-80 md:h-80 object-cover rounded-full"
         />
